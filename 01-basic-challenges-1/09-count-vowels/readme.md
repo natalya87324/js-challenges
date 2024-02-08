@@ -8,7 +8,7 @@ Write a function called `countVowels` that takes in a string and returns the num
 
 ```js
 /**
- * Returns the number of vowels in a string.
+ * Returns the number of vowels in a string. 
  * @param {string} str - The string to search.
  * @returns {number} - The number of vowels in the string.
  */
