@@ -1,13 +1,9 @@
-function formatPhoneNumber(arr) {
-  let numString;
+function formatPhoneNumber(numbers) {
+  const areaCode = numbers.slice(0, 3).join('');
+  const prefix = numbers.slice(3, 6).join('');
+  const lineNumber = numbers.slice(6).join('');
 
-  const numGroup1 = arr.slice(0, 3).join('');
-  const numGroup2 = arr.slice(3, 6).join('');
-  const numGroup3 = arr.slice(6).join('');
-
-  numString = `(${numGroup1}) ${numGroup2}-${numGroup3}`;
-
-  return numString;
+  return `(${areaCode}) ${prefix}-${lineNumber}`;
 }
 
 module.exports = formatPhoneNumber;
